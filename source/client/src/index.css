@@ -128,20 +128,22 @@ details[open] > summary svg { transform: rotate(180deg); }
 .gap-card .bridge-copy { margin: 1rem 0; color: #3e4146; font-weight: 650; }
 
 #pne-persona-section .persona-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; gap: 24px; }
-#pne-persona-section .persona-card { display: flex; height: 100%; min-height: 860px; flex-direction: column; overflow: hidden; border-top: 4px solid var(--pne-red); }
+#pne-persona-section .persona-card { display: flex; height: 100%; min-height: 0; flex-direction: column; overflow: hidden; border-top: 4px solid var(--pne-red); }
 #pne-persona-section .persona-share { position: absolute; top: 17px; right: 18px; color: #F2CDCE; font-size: 30px; font-weight: 800; letter-spacing: -.06em; }
-#pne-persona-section .persona-heading { min-height: 78px; padding-right: 3.5rem; }
+#pne-persona-section .persona-heading { min-height: 64px; padding-right: 3.5rem; }
 #pne-persona-section .persona-card h3 { max-width: 100%; font-size: 15px; }
 #pne-persona-section .persona-rep { margin-top: .45rem; color: var(--pne-red); font-weight: 650; }
-#pne-persona-section .persona-slot { min-height: 98px; }
-#pne-persona-section .persona-segment { min-height: 92px; }
-#pne-persona-section .persona-needs { min-height: 132px; }
+#pne-persona-section .persona-slot { min-height: 0; }
+#pne-persona-section .persona-segment { min-height: 70px; }
+#pne-persona-section .persona-needs { min-height: 105px; }
 #pne-persona-section .persona-slot .field-label { margin-top: 1.1rem; }
 #pne-persona-section .persona-info { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; margin-top: 0; }
 #pne-persona-section .persona-info > div { min-width: 0; }
-#pne-persona-section .persona-goals-channels { min-height: 260px; }
-#pne-persona-section .persona-fears-close { min-height: 300px; }
-#pne-persona-section .persona-info li { color: #565b62; font-size: 12px; line-height: 1.52; }
+#pne-persona-section .persona-goals-channels { min-height: 150px; }
+#pne-persona-section .persona-fears-close { min-height: 185px; }
+#pne-persona-section .persona-info ul { margin: .45rem 0 0; padding: 0; list-style: none; }
+#pne-persona-section .persona-info li { position: relative; padding-left: .75rem; color: #565b62; font-size: 12px; line-height: 1.52; }
+#pne-persona-section .persona-info li::before { position: absolute; top: 0; left: 0; content: "-"; color: #565b62; font-weight: 700; }
 #pne-persona-section .persona-card blockquote { margin: auto 0 0; padding: .85rem 0 0; border-top: 1px solid var(--line); color: var(--pne-red); font-size: 12px; font-style: italic; font-weight: 650; line-height: 1.65; }
 .insight-list { display: grid; gap: 14px; }
 .insight-block { margin: 0; padding: clamp(22px, 3vw, 34px); border: 1px solid var(--line); border-left: 4px solid var(--pne-red); border-radius: var(--radius); background: var(--mist); }
